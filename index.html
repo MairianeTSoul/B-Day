@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY B-DAY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<img src="bday.png" height="640" width="640" style="margin-top: 150px;" alt="С Днем Рождения!"/>
+<img src="cake.png" height="640" width="640" alt="С Днем Рождения!"/>
+
+<div class="scroll-text" style="margin-top: 2000px;">Scroll...</div>
+<div class="scroll-text" style="margin-top: 2000px;">One more scrolling...</div>
+<div class="scroll-text" style="margin-top: 2000px;">Keep going...</div>
+<div class="scroll-text" style="margin-top: 2000px;">Almost there...</div>
+<div class="scroll-text" style="margin-top: 2000px; margin-bottom: 4000px;">Just a bit more scrolling...</div>
+<div class="scroll-text" style="margin-top: 2000px;">HERE!!!</div>
+<img src="nanon.jpg" height="640" width="640" alt="С Днем Рождения!"/>
+<div class="scroll-text" style="margin-bottom: 2000px;">Oh... No... One more scrolling))</div>
+
+<h1>Click me<br>to get your gift</h1>
+<img id="toggleImage" class="change-img" height="551" width="640" src="gift.png" alt="Нажми меня!" onclick="changeImage()">
+<div id="mapLink" style="display: none; padding-top: 20px; padding-bottom: 150px; font-size: 36px">
+    <a href="https://yandex.ru/maps/-/CDXQj49f" target="_blank">Map</a>
+</div>
+
+<script>
+    function changeImage() {
+        const img = document.getElementById("toggleImage");
+        const mapLink = document.getElementById("mapLink");
+
+        if (img.src.includes("gift")) {
+            img.src = "qrcode.jpg";
+            mapLink.style.display = "block"; // Показать ссылку на карту
+        } else {
+            img.src = "gift.png";
+            mapLink.style.display = "none";  // Скрыть ссылку на карту
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b6efce;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.scroll-text {
+    margin: 40px 0;
+    font-size: 36px;
+    font-family: 'Marck Script', cursive;
+    color: #333;
+}
+h1 {
+    font-size: 46px;
+    font-family: 'Marck Script', cursive;
+    color: #333;
+}
+.change-img {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.change-img:hover {
+    transform: scale(1.05);
+}
